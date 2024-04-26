@@ -5,7 +5,15 @@
     "outDir": "./out-tsc/app",
     "types": [
       "node"
-    ]
+    ],
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@base/*": ["./src/app/base/*"],
+      "@environments/*": ["./src/environments/*"],
+      "@interceptors/*": ["./src/app/interceptors/*"],
+      "@pages/*": ["./src/app/pages/*"],
+      "@services/*": ["./src/app/services/*"],
+    }
   },
   "files": [
     "src/main.ts",
